@@ -1,0 +1,55 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <head>
+        <title>Calculator tutorial</title>
+    </head>
+    <body>
+        <!-- <img src="Lovepik_com-400969590-white-line.png" alt="" class="bg"> -->
+        <div class="wrapper">
+            <div class="h1">
+                На підтримку:
+            </div>
+            <h2>Донати:</h2>
+            <div class="donations">
+                <a href="https://donatello.to/didmukola"><img class="donatello" src="donatello_logo.svg"  alt=""></a>             
+                <a href="https://send.monobank.ua/jar/5qp91dhgC7"><img  class="monobank"  src="image0.png" alt=""></a> 
+            </div>
+            <h2>Приват24:</h2>
+            <div class="Privat">
+                <p><input type="text" class="copy-link-text" value="5363 5420 9095 9710" readonly></p>
+                <button type="button" onclick="myFunction()" class="copy-link-button">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+            <h2>USDT (TRC20):</h2>
+            <div class="USDT">
+                <p><input type="text" class="copy-link-text" value="TVi3RAAdR4XCziuahNkVdQY7o5rH5i3woC" readonly></p>
+                <button type="button" onclick="myFunction1()" class="copy-link-button">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+        </div>
+        <input type="text" class="copy-link-text" value="5363542090959710" id="copys" readonly style="display: flex; position: absolute; right: 100000000px;">
+        <input type="text" class="copy-link-text" value="TVi3RAAdR4XCziuahNkVdQY7o5rH5i3woC" id="copya" readonly style="display: flex; position: absolute; right: 100000000px;">
+        <script>
+                function myFunction() {
+                    var copyText = document.getElementById("copys");
+                    copyText.select();
+                    document.execCommand("copy");
+                    alert("Картку скопійовано")
+                }
+                function myFunction1() {
+                    var copyText = document.getElementById("copya");
+                    copyText.select();
+                    document.execCommand("copy");
+                    alert("Картку скопійовано")
+                }
+        </script>
+    </body>
+</html>
