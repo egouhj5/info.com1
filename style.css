@@ -23,6 +23,7 @@ body{
     justify-content: center;
     position: relative;
     color: white;
+    tab-size: 150%
 }
 .wrapper {
     backdrop-filter: blur(5,5px);
@@ -135,6 +136,11 @@ input {
             background-size: 170%;
     }
 }
+@media only screen and (min-width: 1792px) and (max-width:828px) {/*****magenta*******/
+    .wrapper {
+        size: 1;
+    }
+}   
 @media only screen and (min-width: 767px) and (max-width: 1426px) {/*****magenta*******/
     body {
             background-size: 200%;
@@ -147,7 +153,7 @@ input {
 }
 @media only screen and (min-width: 767px) and (max-width: 1066px) {/*****magenta*******/
     body {
-            background-size: 240%;
+            background-size: 444%;
     }
 }
 @media only screen and (min-width: 767px) and (max-width: 972px) {/*****magenta*******/
