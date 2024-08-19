@@ -71,7 +71,7 @@ input {
 .h1 {
     font-size: 30px;
     border-bottom: #a2a2a2 solid;
-    color: white;
+    color: rgb(255, 0, 0);
     font-family: "Roboto", sans-serif;
     font-weight: 100;
 }
@@ -126,7 +126,6 @@ input {
 .USDT h2 {
     margin-bottom: 10px;
 }
-
 @media only screen and (min-width: 1192px) and (max-width:2320px) {/*****magenta*******/
     body {
             background-size: 110%;
